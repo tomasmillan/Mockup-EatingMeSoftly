@@ -158,3 +158,39 @@
     color: #000000;
     background-color: #86bbe7eb;
   } 
+  @media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #form{
+        max-width: 95%;
+        margin: auto;
+    }
+    .input, 
+    textarea, 
+    #submit, 
+    .input::placeholder, 
+    textarea::placeholder{
+        background-color: #a4bda3;
+        color: white;
+    }
+}
+@media (max-width:488px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #form,
+    .input, 
+    textarea, 
+    #submit{
+        max-width: 95%;
+        margin: auto;
+        text-align: center;    
+    }
+}
